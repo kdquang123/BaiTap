@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees delete</title>
+    <link rel="stylesheet" href="../assest/libraries/bootstrap.min.css">
+    <link rel="stylesheet" href="../assest/css/sideBar-navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/employeesDeleted.css">
+   
+</head>
+<body>
+    <div class="side-bar">
+        <header>HRM App</header>
+        <div class="user"><i class="fa-sharp fa-solid fa-circle-user" style="margin-right:15px"></i><p class="username"></p></div>
+        <div class="logout"><i class="fa-sharp fa-solid fa-right-from-bracket"></i>Đăng xuất</div>
+        <ul>
+         <li><a href="./showEmployees.html"><i class="fa-regular fa-address-book"></i><p>Danh sách nhân viên</p></a></li>
+         <li><a href="./addEmployee.html"><i class="fa-solid fa-user-plus"></i><p>Thêm nhân viên</p></a></li>
+         <li><a href="./showDepartment.html"><i class="fa-solid fa-landmark"></i><p>Các phòng ban</p></a></li>
+         <li><a href="./listOfPositions.html"><i class="fa-solid fa-layer-group"></i><p>Danh sách chức vụ</p></a></li>
+         <li><a href="./employeesDeleted.html"><i class="fa-solid fa-user-xmark"></i></i><p>Nhân viên đã nghỉ việc</p></a></li>
+        
+        </ul>
+    </div>
+    <div class="container-fluid">
+        <div class="main">
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-sharp fa-solid fa-bars"></i></a></li>
+                    <li><a href="./home.html">Trang chủ</a></li>
+                </ul>
+            </nav>
+                <div class="dash-board">
+                    <div class="row">
+                       <div class="loading"></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div  class="mask" ></div>
+    <div class="confirm-delete">
+        <h4>Bạn có chắc chắn muốn xóa?</h5>
+        <button type="button" class="btn btn-warning">Xác nhận</button>
+        <button type="button" class="btn btn-dark">Hủy</button>
+    </div>
+    <script>
+        if(!localStorage.getItem("key")){
+           location.href="./login.html";
+        }
+    </script>
+    <script src="../assest/libraries/jquery.min.js"></script>
+    <script src="../assest/libraries/bootstrap.min.js"></script>
+    <script src="../assest/js/home.js"></script>
+    <script src="../assest/js/employeesDeleted.js"></script>
+</body>
+</html>
+

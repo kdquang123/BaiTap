@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assest/libraries/bootstrap.min.css">
+    <link rel="stylesheet" href="../assest/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-0 col-sm-1 col-md-3 col-lg-4"></div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+               <form action="" onsubmit="event.preventDefault()" class="form form-login" method="get">
+                <p class="form-title" style="font-weight: bold;">Đăng nhập</p>
+                <hr style="color:#333;height: 1px;">
+                <span class="checkMessage"></span>
+                <div class="form-group">
+                    <input type="text" placeholder="Tên đăng nhập" class="form-input">
+                    <span class="message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Mật khẩu" class="form-input">
+                    <span class="message"></span>
+                </div>
+                <input type="submit" class=" btn-submit btn-login bg-primary" value="Đăng nhập">
+                <p style="text-align:center;font-size:13px;margin-top:10px">Don't have an Account ?<a href="#" id="sign-up">Sign up</a> now!</p>
+               </form>
+
+               <form action="" onsubmit="event.preventDefault()" class="form-signUp form-hidden" method="post">
+                <p class="form-title" style="font-weight: bold;">Đăng ký</p>
+                <hr style="color:#333;height: 1px;">
+                <span class="checkMessage"></span>
+                <div class="form-group">
+                    <input type="text" placeholder="Họ tên" class="form-input">
+                    <span class="message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Tên đăng nhập" class="form-input">
+                    <span class="message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Mật khẩu" class="form-input">
+                    <span class="message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Nhập lại mật khẩu" class="form-input">
+                    <span class="message"></span>
+                </div>
+                <input type="submit" class="btn-submit btn-signUp bg-primary" value="Đăng ký">
+                <p style="text-align:center;font-size:13px;margin-top:10px">Already have an Account ?<a href="#" id="Login">Login</a> now!</p>
+               </form>
+            </div>
+            <div class="col-0 col-sm-1 col-md-3 col-lg-4"></div>
+        </div>
+        
+    </div>
+    <script>
+       if(localStorage.getItem("key")){
+        location.href="./home.html";
+       }
+    </script>
+    <script type="module" src="../assest/js/validateForm.js"></script>
+    <script type="module" src="../assest/js/handleLogin.js"></script>
+    <script type="module" src="../assest/js/handleSignUp.js"></script>
+    <script src="../assest/libraries/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.form-title{
+   text-align: center;
+   font-size: 30px;
+}
+
+.form-login{
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    padding: 20px 15px;
+    border-radius: 5px;
+    animation: slideDown1 0.8s 1 linear;
+    margin-top: 200px;
+}
+
+.form-signUp{
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    padding: 20px 15px;
+    border-radius: 5px;
+    animation: slideDown2 0.5s 1 linear;
+    margin-top: 110px;
+}
+
+.form-hidden{
+   display: none;
+}
+
+.form-group{
+    margin: 30px 0px;
+}
+
+.form-input{
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5) inset;
+    border-radius: 3px;
+    height: 35px;
+    padding: 5px 10px;
+    background-color: rgb(244, 242, 242);
+    outline: none;
+}
+
+.btn-submit{
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.btn-submit:hover{
+    opacity: 0.7;
+}
+
+.message{
+    font-size: 10px;
+    color:red ;
+}
+
+.warn-input{
+    border:1px solid red;
+    background-color: white;
+    box-shadow: none;
+}
+
+@keyframes slideDown1{
+    from{
+        margin-top: 100px;
+        opacity: 0.2;
+    }
+    to{
+        margin-top: 200px;
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown2{
+    from{
+        margin-top: 80px;
+        opacity: 0.2;
+    }
+    to{
+        margin-top: 110px;
+        opacity: 1;
+    }
+}
+
+
+.checkMessage{
+    font-size: 14px;
+    color: red;
+}

@@ -1,0 +1,107 @@
+.row{
+     justify-content: space-around;
+     
+}
+
+.row div{
+    height: 168px;
+    flex-basis: 22%;
+    margin-bottom: 30px;
+}
+
+.row div:hover{
+   cursor: pointer;
+}
+
+.row .card{
+    border: none;
+    box-shadow: 0px 0px 3px rgba(0,0,0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+   
+}
+
+.row .card:hover i{
+    font-size: 55px;
+}
+
+.row .card .card-title{
+    flex: 2;
+    padding: 20px 20px 0px 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+.row .card i{
+    transition: font-size 500ms linear;
+    flex: 1;
+    line-height:100px ;
+    font-size: 50px;
+    color: rgba(0,0,0, 0.1);
+}
+
+.row .card-blue{
+        background-color: #17a2b8;
+}
+
+.row .card-green{
+    background-color: #28a745;
+}
+
+.row .card-yellow{
+    background-color: #ffc107;
+}
+
+.row .card-red{
+    background-color: #dc3545;
+}
+.mask{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .row div{
+        flex-basis: 40% ;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .row div{
+        flex-basis: 45% ;
+    }
+  }
+
+
+  @media screen and (max-width: 576px) {
+
+    .row div{
+        flex-basis: 90% ;
+    }
+
+    .row .card .card-title{
+        font-size: 22px ;
+    }
+
+    .row .card i{
+        font-size: 80px ;
+    }
+
+    
+  }
+
+
+  @media screen and (max-width: 350px) {
+    .row .card{
+        width: 320px;
+    }
+    
+  }

@@ -1,0 +1,51 @@
+h2{
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.side-bar ul li:nth-child(2){
+    background-color: #007bff;
+}
+
+.side-bar ul li:nth-child(2) a{
+    color: white;
+}
+
+form{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+
+.form-check{
+    display: inline-block;
+    margin-right:15px ;
+}
+
+.container-fluid{
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.main{
+    height: auto;
+}
+
+img{
+    width: 160px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px 0px;
+}
+
+
+form .form-group .errorMessage{
+    color: red;
+}
+
+
+.form-error input{
+    border: 1px solid red;
+}
